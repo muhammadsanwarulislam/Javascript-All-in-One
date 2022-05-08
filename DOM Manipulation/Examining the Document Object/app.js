@@ -1,45 +1,40 @@
-// Define UI Vars
-const form = document.querySelector('#task-form');
-const taskList = document.querySelector('.collection');
-const clearBtn = document.querySelector('.clear-tasks');
-const filter = document.querySelector('#filter');
-const taskInput = document.querySelector('#task');
+let val
+val = document
+val = document.all
+val = document.all[0]
+val = document.head
+val = document.body
+val = document.domain
+val = document.contentType
+val = document.URL
 
-// Load all event listeners
-loadEventListeners();
+val = document.forms
+val = document.forms[0].id
+val = document.forms[0].method
 
-// Load all event listeners
-function loadEventListeners() {
-  // Add task event
-  form.addEventListener('submit', addTask);
-}
+val = document.scripts[2].getAttribute('src')
 
-// Add Task
-function addTask(e) {
-  if(taskInput.value === '') {
-    alert('Add a task');
-  }
+//Get single element
+// val = document.getElementById('task-title').id
 
-  // Create li element
-  const li = document.createElement('li');
-  // Add class
-  li.className = 'collection-item';
-  // Create text node and append to li
-  li.appendChild(document.createTextNode(taskInput.value));
-  // Create new link element
-  const link = document.createElement('a');
-  // Add class
-  link.className = 'delete-item secondary-content';
-  // Add icon html
-  link.innerHTML = '<i class="fa fa-remove"></i>';
-  // Append the link to li
-  li.appendChild(link);
+//Change Style
+// val = document.getElementById('task-title').style.background = '#333'
+// val = document.getElementById('task-title').style.color = '#fff'
 
-  // Append li to ul
-  taskList.appendChild(li);
+//Change content
+// val = document.getElementById('task-title').textContent = 'Task of task'
+// val = document.getElementById('task-title').innerText = 'Task'
+// val = document.getElementById('task-title').innerHTML = '<span>hello</span>'
 
-  // Clear input
-  taskInput.value = '';
 
-  e.preventDefault();
-}
+// val = document.querySelector('.collection').getElementsByClassName('collection-item')[0].textContent = 'Hello'
+
+let scripts = document.scripts
+let scriptArr = Array.from(scripts)
+
+// scriptArr.forEach(function(script){
+//   console.log(script.getAttribute('src'))
+// })
+
+
+console.log(val)
