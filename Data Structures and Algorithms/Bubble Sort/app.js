@@ -16,6 +16,6 @@ function bubbleSort(array){
     return array
 }
 
-console.log(bubbleSort([1,5,4,3,6,8]))
+console.log(bubbleSort([1,5,4,3,6,8,10]))
 
 

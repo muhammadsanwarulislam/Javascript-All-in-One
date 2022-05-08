@@ -5,13 +5,14 @@
 */
 
 //Define array
-const numbers = [20,21,45,5,70,100]
+const numbers = [10,20,21,45,5,70,100]
 
 let val
-val = numbers.sort(function(x,y){
-    return x-y
-})
-
+//Find
+function under70(number){
+    return number<70
+}
+val = numbers.find(under70)
 
 //Output
 console.log(val)
