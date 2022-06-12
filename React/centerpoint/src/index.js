@@ -4,24 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-//Object destructuring
-class Clock extends React.Component{
-  render() {
-    return (
-      <div>
-        <h2>It is {new Date().toLocaleTimeString(this.props.local)}.</h2>
-      </div>
-    );
-  }
-}
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Clock local="bn-BD" />); //pass parameter as object
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
 
 // If you want to start measuring performance in your app, pass a function
