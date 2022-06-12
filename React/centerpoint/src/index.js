@@ -4,24 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-
+//Object destructuring
+function Clock({local}) {
+  return (
+    <div>
+      <h2>It is {new Date().toLocaleTimeString(local)}.</h2>
+    </div>
+  );
+}
 const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Clock local="bn-BD" />); //pass parameter as object
 // root.render(
 //   <React.StrictMode>
 //     <App />
 //   </React.StrictMode>
 // );
 
-function tick() {
-  const element = (
-    <div>
-      <h1>Hello, world!</h1>
-      <h2>It is {new Date().toLocaleTimeString()}.</h2>
-    </div>
-  );
-  root.render(element);
-}
-setInterval(tick, 1000)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
