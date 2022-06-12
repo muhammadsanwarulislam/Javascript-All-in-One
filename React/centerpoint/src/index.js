@@ -5,15 +5,19 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 //Object destructuring
-function Clock({local}) {
-  return (
-    <div>
-      <h2>It is {new Date().toLocaleTimeString(local)}.</h2>
-    </div>
-  );
+class Clock {
+  print() {
+    return (
+      <div>
+        <h2>It is {new Date().toLocaleTimeString()}.</h2>
+      </div>
+    );
+  }
 }
+
+const ClockComponent = new Clock();
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Clock local="bn-BD" />); //pass parameter as object
+root.render(ClockComponent.print()); //pass parameter as object
 // root.render(
 //   <React.StrictMode>
 //     <App />
