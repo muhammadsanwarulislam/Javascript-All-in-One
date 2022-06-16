@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Clock local="bn-BD" />
+      <Clock />
     </div>
   );
 }
